@@ -8,7 +8,8 @@
         "start": "next start",
         "lint": "eslint \"./components/**\" \"./pages/**\" --ext ts,tsx",
         "lint:fix": "yarn lint --fix",
-        "format": "prettier --write \"./components/**\" \"./pages/**\" --ignore-path ./.gitignore"
+        "format": "prettier --write \"./components/**\" \"./pages/**\" --ignore-path ./.gitignore",
+        "prepare": "husky install"
     },
     "dependencies": {
         "autoprefixer": "^10.3.1",
@@ -30,24 +31,10 @@
         "eslint-plugin-react": "^7.24.0",
         "eslint-plugin-react-hooks": "^4.2.0",
         "eslint-plugin-simple-import-sort": "^7.0.0",
-        "husky": "4",
-        "lint-staged": "^11.1.2",
         "prettier": "^2.3.2",
         "stylelint": "^13.13.1",
         "stylelint-config-recommended": "^5.0.0",
-        "typescript": "^4.3.5"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "./**/*.{js,jsx,ts,tsx}": [
-            "yarn lint:fix"
-        ],
-        "./**/*.{js,jsx,ts,tsx,json,css,md}": [
-            "yarn format"
-        ]
+        "typescript": "^4.3.5",
+        "husky": "^7.0.0"
     }
 }
