@@ -1,6 +1,6 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import Header from '@/components/header';
+import Header from '@/components/header'
 
 export default function Home() {
     return (
@@ -52,5 +52,5 @@ export default function Home() {
                 </div>
             </div>
         </>
-    );
+    )
 }

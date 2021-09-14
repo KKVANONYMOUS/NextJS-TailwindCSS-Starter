@@ -5,5 +5,5 @@ export default function Header() {
                 <h1 className="text-white text-3xl ">NextJS-TailwindCSS Starter</h1>
             </header>
         </div>
-    );
+    )
 }
